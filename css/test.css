@@ -66,7 +66,7 @@ body{
  	left:50%;
  }
  .circle{
- 	background: url("../img/circle.svg") top center no-repeat;
+ 	background: url("../img/circle.png") top center no-repeat;
     width: 100%;
     height: 14px;
  }
@@ -154,22 +154,23 @@ body{
 		.end_line{
 			width: 100%;
 			height: 100vh;
-			background: #f0f0f0;
+			background: #fff;
 			position: relative;
 		}
 		.inside{
 			width: 2px;
-			background: #fff;
+			background: #C2C2E9;
 			height: 100vh;
 			margin: 0 auto;
 		}
 		#about{
 			width: 100%;
 			min-height: 100%;
-			background: #f0f0f0;
+			background: #C2C2E9;
 			position: relative;
 			margin: 0 auto;
 			padding: 0;
+			font-size:0
 		}
 		.about_line{
 			background: url("../img/endline.svg") no-repeat top center;
@@ -178,8 +179,11 @@ body{
 			font-weight: 600;
 			text-transform: uppercase;
 			line-height: 60px;
-			color: blue;;
+			color:#fff;
 			margin: 0 auto;
+		}
+		.wenzi{
+			font-size: 20px;
 		}
 		#about #services{
 			width: 100%;
@@ -202,5 +206,43 @@ body{
 		    position: relative;
 		    min-height: 125px;
 		    display: inline-block;
+		}
+		.serv01{
+			background: url("../img/logo1.png")top 20px center no-repeat;
+			height: 125px;
+		}
+		.serv02{
+			background: url("../img/logo2.png")top 20px center no-repeat;
+			height: 125px;
+		}
+		.serv03{
+			background: url("../img/logo3.png")top 20px center no-repeat;
+			height: 125px;
+		}
+		.gif_c:hover{
+			position: absolute;
+			left: 25%;
+			width: 100px;
+			height: 125px;
+		    -webkit-animation:shake 2s infinite;    
+		    -moz-animation:shake 2s infinite;  
+		    animation:shake 2s infinite;  
+
+		}
+		@-webkit-keyframes shake {  
+		  
+		    0%, 100% {-webkit-transform: rotateZ(0);}  
+		    10%, 30%, 50%, 70%, 90% {-webkit-transform: rotateZ(-20deg);}  
+		    20%, 40%, 60%, 80% {-webkit-transform: rotateZ(45deg);}  
+		}  
+		@-moz-keyframes shake {  
+		    0%, 100% {-moz-transform: rotateZ(0);}  
+		    10%, 30%, 50%, 70%, 90% {-moz-transform: rotateZ(-20deg);}  
+		    20%, 40%, 60%, 80% {-moz-transform: rotateZ(45deg);}  
+		} 
+		@keyframes shake {  
+		    0%, 100% {transform: rotateZ(0);}  
+		    10%, 30%, 50%, 70%, 90% {transform: rotateZ(-20deg);}  
+		    20%, 40%, 60%, 80% {transform: rotateZ(45deg);}  
 		}
 /*# sourceMappingURL=test.css.map */
